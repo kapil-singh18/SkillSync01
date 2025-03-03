@@ -1,0 +1,274 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Developer Dashboard
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link rel="stylesheet" href="Progress_Hub.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <div class="flex">
+        <div class="sidebar fixed inset-y-0 left-0 bg-white shadow-lg w-64 p-4 sidebar" id="sidebar">
+            <h2 class="text-2xl font-semibold mb-8 text-blue-600">
+                SkillSync
+            </h2>
+            <ul>
+                <li class="mb-2">
+                    <a class="text-gray-800 hover:text-blue-600 block px-3 py-2 rounded font-bold" href="#">
+                        Dashboard
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a class="text-gray-800 hover:text-blue-600 block px-3 py-2 rounded font-bold" href="#">
+                        Courses
+                    </a>
+                </li>
+                <li class="mb-2">
+                    <a class="text-gray-800 hover:text-blue-600 block px-3 py-2 rounded font-bold" href="#">
+                        Achievements
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="flex-1">
+            <header class="bg-white shadow p-4 flex justify-between items-center">
+                <div class="flex items-center">
+                    <button class="mr-4" id="menu-button">
+                        <i class="fas fa-bars text-xl">
+                        </i>
+                    </button>
+                    <h1 class="text-xl font-semibold">
+                        SkillSync
+                    </h1>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <i class="fas fa-bell">
+                    </i>
+                    <i class="fas fa-envelope">
+                    </i>
+                </div>
+            </header>
+            <main class="p-4">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div class="lg:col-span-2">
+                        <div class="bg-white p-6 rounded-lg shadow mb-4">
+                            <div class="flex items-center mb-4">
+                                <img alt="Profile picture of John Developer" class="rounded-full mr-4" height="80"
+                                    src="https://storage.googleapis.com/a1aa/image/6jc79H80zxOsbgEd-SAG81hlea1twaoVgQisEdESqqo.jpg"
+                                    width="80" />
+                                <div>
+                                    <h2 class="text-2xl font-semibold">
+                                        John Developer
+                                    </h2>
+                                    <p class="text-gray-600">
+                                        Full Stack Developer | Open to Mentoring
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex space-x-4">
+                                <button class="bg-[#266AE9] text-white px-4 py-2 rounded">
+                                    Edit Profile
+                                </button>
+                                <button class="bg-gray-200 text-gray-800 px-4 py-2 rounded">
+                                    Share Profile
+                                </button>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow mb-4">
+                            <h3 class="text-xl font-semibold mb-4">
+                                Skills &amp; Badges
+                            </h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-gray-800">
+                                            Programming
+                                        </span>
+                                        <span class="text-gray-600">
+                                            75%
+                                        </span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                                        <div class="h-2.5 rounded-full" style="width: 75%; background-color: #266AE9;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="flex items-center justify-between mb-2">
+                                        <span class="text-gray-800">
+                                            Database
+                                        </span>
+                                        <span class="text-gray-600">
+                                            60%
+                                        </span>
+                                    </div>
+                                    <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                                        <div class="h-2.5 rounded-full" style="width: 60%; background-color: #266AE9;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex space-x-2">
+                                <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full hover-bg-skyblue">
+                                    JavaScript
+                                </span>
+                                <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full hover-bg-skyblue">
+                                    React
+                                </span>
+                                <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full hover-bg-skyblue">
+                                    Node.js
+                                </span>
+                                <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full hover-bg-skyblue">
+                                    MongoDB
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-xl font-semibold mb-4">
+                                Learning Progress
+                            </h3>
+                            <div class="mb-4">
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-gray-800">
+                                        Advanced React Patterns
+                                    </span>
+                                    <span class="text-gray-600">
+                                        75% Complete
+                                    </span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                                    <div class="h-2.5 rounded-full" style="width: 75%; background-color: #266AE9;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center justify-between mb-2">
+                                    <span class="text-gray-800">
+                                        GraphQL Masterclass
+                                    </span>
+                                    <span class="text-gray-600">
+                                        40% Complete
+                                    </span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4">
+                                    <div class="h-2.5 rounded-full" style="width: 40%; background-color: #266AE9;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-xl font-semibold mb-4">
+                                Quick Actions
+                            </h3>
+                            <button class="bg-[#266AE9] text-white w-full py-2 mb-2 rounded hover-bg-blue">
+                                + Post New Project
+                            </button>
+                            <button class="bg-gray-200 text-gray-800 w-full py-2 mb-2 rounded hover-bg-blue">
+                                Offer Mentoring
+                            </button>
+                            <button class="bg-gray-200 text-gray-800 w-full py-2 rounded hover-bg-blue">
+                                Add Certification
+                            </button>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-xl font-semibold mb-4">
+                                Calendar
+                            </h3>
+                            <div class="grid grid-cols-7 gap-2 text-center">
+                                <div class="text-gray-600">
+                                    Su
+                                </div>
+                                <div class="text-gray-600">
+                                    Mo
+                                </div>
+                                <div class="text-gray-600">
+                                    Tu
+                                </div>
+                                <div class="text-gray-600">
+                                    We
+                                </div>
+                                <div class="text-gray-600">
+                                    Th
+                                </div>
+                                <div class="text-gray-600">
+                                    Fr
+                                </div>
+                                <div class="text-gray-600">
+                                    Sa
+                                </div>
+                                <div class="text-gray-400">
+                                    30
+                                </div>
+                                <div class="text-gray-400">
+                                    1
+                                </div>
+                                <div class="text-gray-400">
+                                    2
+                                </div>
+                                <div class="bg-[#266AE9] text-white rounded-full">
+                                    3
+                                </div>
+                                <div class="text-gray-400">
+                                    4
+                                </div>
+                                <div class="text-gray-400">
+                                    5
+                                </div>
+                                <div class="text-gray-400">
+                                    6
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <h3 class="text-xl font-semibold mb-4">
+                                Upcoming Events
+                            </h3>
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-calendar-alt text-gray-600 mr-3">
+                                </i>
+                                <div>
+                                    <p class="text-gray-800">
+                                        Mentoring Session
+                                    </p>
+                                    <p class="text-gray-600">
+                                        Tomorrow, 2:00 PM
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-alt text-gray-600 mr-3">
+                                </i>
+                                <div>
+                                    <p class="text-gray-800">
+                                        React Workshop
+                                    </p>
+                                    <p class="text-gray-600">
+                                        Jan 15, 2025
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="bg-white text-center p-4 mt-4">
+                <p class="text-gray-600">
+                    © 2025 Learning Platform. All rights reserved.
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="Progress_Hub.js"></script>
+</body>
+
+</html>

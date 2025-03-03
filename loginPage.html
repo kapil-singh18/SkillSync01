@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <div class="flex justify-center mb-6">
+            <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center">
+                <i class="fas fa-user-circle text-3xl text-gray-400"></i>
+            </div>
+        </div>
+        <h2 class="text-2xl font-semibold text-center mb-2 text-blue-600">SkillSync</h2>
+        <p class="text-center text-gray-500 mb-6">Sign in to your account</p>
+        <form>
+            <div class="mb-4">
+                <label class="block text-gray-700">Email</label>
+                <input type="email" placeholder="name@company.com"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="mb-4">
+                <label class="block text-gray-700">Password</label>
+                <input type="password" placeholder="••••••••"
+                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+            </div>
+            <div class="flex items-center justify-between mb-6">
+                <label class="flex items-center">
+                    <input type="checkbox" class="form-checkbox">
+                    <span class="ml-2 text-gray-700">Remember me</span>
+                </label>
+                <a href="#" class="text-sm text-blue-500 hover:underline">Forgot password?</a>
+            </div>
+            <button class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200">Sign
+                in</button>
+        </form>
+        <div class="flex items-center my-6">
+            <hr class="flex-grow border-gray-300">
+            <span class="mx-4 text-gray-500">Or continue with</span>
+            <hr class="flex-grow border-gray-300">
+        </div>
+        <div class="flex flex-col space-y-4">
+            <button
+                class="w-full flex items-center justify-center border border-gray-300 py-2 rounded-lg hover:bg-[#C8DDFF] transition duration-200">
+                <i class="fab fa-google text-xl mr-2"></i>
+                Sign in with Google
+            </button>
+            <button
+                class="w-full flex items-center justify-center border border-gray-300 py-2 rounded-lg hover:bg-[#C8DDFF] transition duration-200">
+                <i class="fab fa-linkedin text-xl mr-2"></i>
+                Sign in with LinkedIn
+            </button>
+        </div>
+        <p class="text-center text-gray-500 mt-6">Don't have an account? <a href="#"
+                class="text-blue-500 hover:underline">Sign up</a></p>
+    </div>
+</body>
+
+</html>
